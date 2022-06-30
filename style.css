@@ -343,17 +343,17 @@ html {
 
     .about-company__content {
         text-align: center;
-        width: 100%;
+        width: 90%;
         margin-inline: auto;
     }
 
     .about-company__content h4 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         padding-bottom: 2rem;
     }
 
     .about-company__content p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.8;
     }
 
@@ -381,6 +381,48 @@ html {
         height: auto;
     }
 
+    .features-section {
+        padding: 5rem 0 16rem 0;
+        row-gap: 3rem;
+    }
+
+    .features-section__card {
+        width: 90%;
+        padding: 4rem 0 2rem 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .features-section__card .content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .features-section__about {
+        text-align: center;
+        width: 88%;
+        padding-top: 4rem;
+        margin-inline: auto;
+        order: 1;
+    }
+
+    .features-section__about h4 {
+        font-size: 1.4rem;
+        padding-bottom: 1rem;
+    }
+
+    .features-section__about p {
+        color: rgb(155, 155, 155);
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .features-section__image {
+        width: 85%;
+        margin-inline: auto;
+    }
+
 
 
 
@@ -388,13 +430,28 @@ html {
 
     /* 
 
+    .features-section__about {
+        width: 40%;
+    }
+
+    .features-section__about h4 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .features-section__about p {
+        color: rgb(155, 155, 155);
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
 
     
     } */
 
-    .features-section__card .content-wrapper {
+    /* .features-section__card .content-wrapper {
         flex-wrap: wrap;
-    }
+    } */
 
     .footer-content {
         display: block;
@@ -414,6 +471,11 @@ html {
     }
 
     .about-company, .hero-image {
+        max-width: 480px;
+        margin-inline: auto;
+    }
+
+    .about-company__content h4, .about-company__content p {
         max-width: 450px;
         margin-inline: auto;
     }
@@ -421,5 +483,9 @@ html {
     .cta-button .button.small {
         font-size: 0.9rem;
         width: 83%;
+    }
+
+    .features-section__card {
+        max-width: 480px;
     }
 }
