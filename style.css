@@ -287,3 +287,139 @@ html {
 .footer__social-links .fa-instagram {
     padding: 0.6rem 0.7rem;
 }
+
+@media screen and (max-width: 767px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .page-wrapper {
+        width: 100%;
+    }
+
+    .hero-section {
+        background-image: url('images/bg-hero-mobile.svg');
+        background-color: hsl(193, 100%, 96%);
+        background-size: contain;
+    }
+
+    .primary-header {
+        padding: 2rem 0 6rem 0;
+    }
+
+    .nav-bar {
+        align-items: baseline;
+    }
+
+    .nav-bar.container {
+        width: 90%;
+    }
+
+    .logo.large img {
+        width: 55%;
+        position: relative;
+        top: 0.5rem;
+    }
+
+    .nav-bar .button {
+        font-size: 0.8rem;
+        font-weight: 700;
+        width: 35%;
+        padding: 0.3rem 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .hero-content {
+        display: block;
+    }
+
+    .about-company {
+        width: 100%;
+    }
+
+    .about-company__content {
+        text-align: center;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .about-company__content h4 {
+        font-size: 1.8rem;
+        padding-bottom: 2rem;
+    }
+
+    .about-company__content p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .cta-button {
+        padding: 2.5rem 0;
+    }
+
+    .cta-button .button {
+        padding: 0.9rem 0;
+    }
+
+    .cta-button .button.small {
+        font-size: 0.85rem;
+        width: 83%;
+    }
+
+    .hero-image {
+        padding: 2rem 0;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+
+
+
+
+    /* 
+
+
+    
+    } */
+
+    .features-section__card .content-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer-content {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+    .nav-bar.container {
+        width: 85%;
+    }
+
+    .nav-bar .button {
+        width: 30%;
+        padding: 0.5rem 0;
+    }
+
+    .about-company, .hero-image {
+        max-width: 450px;
+        margin-inline: auto;
+    }
+
+    .cta-button .button.small {
+        font-size: 0.9rem;
+        width: 83%;
+    }
+}
