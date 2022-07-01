@@ -161,7 +161,7 @@ html {
 /* REGISTER SECTION */
 
 
-.register-section {
+.register-section__wrapper {
     background-color: white;
     text-align: center;
     width: 50%;
@@ -176,6 +176,7 @@ html {
 
 .register-section h4 {
     font-size: 2.2rem;
+    font-weight: 700;
 }
 
 .cta-button .button.large {
@@ -382,7 +383,9 @@ html {
     }
 
     .features-section {
-        padding: 5rem 0 16rem 0;
+        padding-top: 5rem;
+        padding-bottom: 0;
+        margin-bottom: 7rem;
         row-gap: 3rem;
     }
 
@@ -423,6 +426,40 @@ html {
         margin-inline: auto;
     }
 
+    .register-section {
+        width: 95%;
+        padding: 2rem 0;
+        margin-inline: auto;
+        position: relative;
+        bottom: -11rem;
+    }
+
+    .register-section__wrapper {
+        width: 100%;
+        padding: 2rem 0;
+        position: absolute;
+        z-index: 1000;
+        bottom: 0;
+        left: 0; 
+    }
+
+    .register-section h4 {
+        font-size: 1.25rem;
+    }
+
+    .register-section .cta-button {
+        padding-bottom: 0;
+    }
+
+    .cta-button .button.large {
+        font-size: 0.8rem;
+        width: 80%;
+        max-width: 280px;
+        padding: 1.05rem 0;
+        cursor: pointer;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
 
 
 
@@ -430,28 +467,7 @@ html {
 
     /* 
 
-    .features-section__about {
-        width: 40%;
-    }
-
-    .features-section__about h4 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    .features-section__about p {
-        color: rgb(155, 155, 155);
-        font-size: 1.2rem;
-        line-height: 1.6;
-    }
-
-    
-    } */
-
-    /* .features-section__card .content-wrapper {
-        flex-wrap: wrap;
-    } */
+     */
 
     .footer-content {
         display: block;
@@ -485,7 +501,21 @@ html {
         width: 83%;
     }
 
+    .features-section {
+        margin-bottom: 10rem;
+    }
+
     .features-section__card {
         max-width: 480px;
+    }
+
+    .register-section {
+        max-width: 500px;
+        bottom: -15rem;
+    }
+
+    .register-section__wrapper {
+        padding: 3rem 0;
+
     }
 }
