@@ -199,7 +199,6 @@ html {
 }
 
 .logo.small {
-    /* border: 1px solid red; */
     padding-bottom: 3rem;
     margin-inline: 11%;
 }
@@ -211,7 +210,6 @@ html {
 }
 
 .footer-content {
-    /* border: 1px solid lightgrey; */
     display: flex;
     justify-content: space-between;
     width: 78%;
@@ -224,7 +222,6 @@ html {
 }
 
 .footer__first-column {
-    /* border: 1px solid hsl(0, 0%, 100%); */
     width: 35%;
 }
 
@@ -460,18 +457,88 @@ html {
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     }
 
+    .primary-footer {
+        padding: 10rem 0 5rem 0;
+    }
+
+    .logo.small {
+        width: 89%;
+        padding-bottom: 3rem;
+        margin-inline: auto;
+    }
+
+    .footer-content {
+        display: block;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .footer-content p {
+        color: hsl(208, 11%, 85%);
+        font-size: 1.1rem;
+        width: 88%;
+    }
+
+    .footer__first-column {
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .footer__first-column-wrapper {
+        width: 100%;
+    }
+
+    .footer__first-column p {
+        display: inline;
+    }
+
+    .location, .telephone, .email {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+    }
+
+    .location__icon {
+        position: relative;
+        top: 0.8rem;
+    }
+
+    .location__icon img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer__second-column, .footer__third-column {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .footer__second-column p, .footer__third-column p {
+        font-size: 1.1rem;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .footer__fourth-column {
+        width: 100%;
+        padding-top: 3rem;
+    }
+
+    .footer__social-links {
+        width: 40%;
+        padding-top: 1rem;
+        margin-inline: auto;
+    }
+
 
 
 
 
 
     /* 
+ 
 
      */
-
-    .footer-content {
-        display: block;
-    }
 
 }
 
@@ -516,6 +583,20 @@ html {
 
     .register-section__wrapper {
         padding: 3rem 0;
+    }
 
+    .logo.small, .footer__first-column {
+        max-width: 470px;
+        margin-inline: auto;
+    }
+
+    .footer__second-column, .footer__third-column {
+        max-width: 470px;
+        margin-inline: auto;
+    }
+
+    .footer__social-links {
+        max-width: 180px;
+        margin-inline: auto;
     }
 }
