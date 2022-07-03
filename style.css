@@ -582,15 +582,24 @@ html {
 
     .register-section__wrapper {
         padding: 3rem 0;
-    }
+    } 
 
-    .logo.small, .footer__first-column {
-        max-width: 470px;
+    .logo.small {
+        width: 83%;
         margin-inline: auto;
     }
 
-    .footer__second-column, .footer__third-column {
+    .footer__first-column {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .footer__first-column-wrapper {
         max-width: 470px;
+    }
+
+    .footer__second-column, .footer__third-column {
+        width: 90%;
         margin-inline: auto;
     }
 
@@ -612,7 +621,29 @@ html {
     .cta-button .button {
         padding: 1rem 0;
     }
-    
+
+    .logo.small {
+        width: 73%;
+    }
+
+    .footer__first-column {
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    .footer__first-column-wrapper {
+        max-width: 600px;
+    }
+
+    .footer__first-column p {
+        width: 90%;
+    }
+
+    .footer__second-column, .footer__third-column {
+        width: 80%;
+        margin-inline: auto;
+    }
+
 }
 
 /* @media screen and (min-width: 1205px) {
