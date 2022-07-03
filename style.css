@@ -314,7 +314,7 @@ html {
     .hero-section {
         background-image: url('images/bg-hero-mobile.svg');
         background-color: hsl(193, 100%, 96%);
-        background-size: contain;
+        background-size: cover;
     }
 
     .primary-header {
@@ -563,11 +563,20 @@ html {
     }
 
     .features-section__card {
-        max-width: 480px;
+        max-width: 750px;
+    }
+
+    .features-section__about {
+        max-width: 520px;
+    }
+
+    .features-section__image {
+        text-align: center;
     }
 
     .register-section {
-        max-width: 500px;
+        width: 90%;
+        max-width: 600px;
         bottom: -15rem;
     }
 
@@ -603,6 +612,7 @@ html {
     .cta-button .button {
         padding: 1rem 0;
     }
+    
 }
 
 /* @media screen and (min-width: 1205px) {
