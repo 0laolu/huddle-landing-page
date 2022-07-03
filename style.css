@@ -192,7 +192,6 @@ html {
 
 
 .primary-footer {
-    border: 1px solid darkcyan;
     background-color: hsl(192, 100%, 9%);
     padding: 16rem 0 10rem 0;
     margin-top: 3rem;
@@ -226,12 +225,28 @@ html {
 }
 
 .footer__first-column-wrapper {
-    width: 90%;
-    margin-inline: auto;
+    width: 95%;
 }
 
-.location p  {
-    line-height: 1.8;
+.footer__first-column p {
+    display: inline;
+    width: 90%;
+}
+
+.location, .telephone, .email {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.location__icon {
+    position: relative;
+    top: 0.8rem;
+}
+
+.location__icon img {
+    max-width: 100%;
+    height: auto;
 }
 
 .footer__second-column, .footer__third-column {
@@ -286,7 +301,7 @@ html {
     padding: 0.6rem 0.7rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1180px) {
     * {
         padding: 0;
         margin: 0;
@@ -492,22 +507,6 @@ html {
         display: inline;
     }
 
-    .location, .telephone, .email {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 2rem;
-    }
-
-    .location__icon {
-        position: relative;
-        top: 0.8rem;
-    }
-
-    .location__icon img {
-        max-width: 100%;
-        height: auto;
-    }
-
     .footer__second-column, .footer__third-column {
         width: 100%;
         justify-content: flex-start;
@@ -529,20 +528,9 @@ html {
         padding-top: 1rem;
         margin-inline: auto;
     }
-
-
-
-
-
-
-    /* 
- 
-
-     */
-
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1180px) {
 
     .nav-bar.container {
         width: 85%;
@@ -550,22 +538,24 @@ html {
 
     .nav-bar .button {
         width: 30%;
+        max-width: 200px;
         padding: 0.5rem 0;
     }
 
-    .about-company, .hero-image {
-        max-width: 480px;
+    .hero-image {
         margin-inline: auto;
+        max-width: 680px;
     }
 
     .about-company__content h4, .about-company__content p {
-        max-width: 450px;
+        max-width: 550px;
         margin-inline: auto;
     }
 
     .cta-button .button.small {
         font-size: 0.9rem;
         width: 83%;
+        max-width: 400px;
     }
 
     .features-section {
@@ -600,3 +590,29 @@ html {
         margin-inline: auto;
     }
 }
+@media screen and (min-width: 768px) {
+
+    .about-company__content h4 {
+        font-size: 2.2rem;
+    }
+
+    .about-company__content p {
+        font-size: 1.1rem;
+    }
+
+    .cta-button .button {
+        padding: 1rem 0;
+    }
+}
+
+/* @media screen and (min-width: 1205px) {
+    
+} */
+
+/* @media screen and (min-width: 1350px) {
+    
+} */
+
+/* @media screen and (min-width: 1480px) {
+    
+} */
