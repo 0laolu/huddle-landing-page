@@ -43,10 +43,6 @@ html {
     background-color: white;
     color: hsl(208, 11%, 3%);
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    width: 15%;
-    padding: 0.7rem;
     border: 1px solid white;
     border-radius: 30px;
     outline: none;
@@ -60,30 +56,18 @@ html {
     align-items: center;
 }
 
-.about-company {
-    width: 50%;
-}
 
-.about-company__content {
-    width: 82%;
-}
 
 .about-company__content h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.8rem;
     font-weight: 600;
-    padding-bottom: 2.5rem;
 }
 
 .about-company__content p {
     color: rgb(77, 74, 74);
     font-size: 1.2rem;
     font-weight: 400;
-    line-height: 1.6;
-}
-
-.hero-image {
-    width: 55%;
 }
 
 .hero-image img {
@@ -91,23 +75,13 @@ html {
     height: auto;
 }
 
-.cta-button {
-    padding: 3rem 0 2rem 0;
-}
-
 .cta-button .button {
     background-color: hsl(322, 100%, 66%);
     color: hsl(193, 100%, 96%);
     font-weight: 700;
-    padding: 1.3rem 0;
     border: none;
     border-radius: 40px;
     cursor: pointer;
-}
-
-.cta-button .button.small {
-    font-size: 1rem;
-    width: 55%;
 }
 
 
@@ -193,8 +167,6 @@ html {
 
 .primary-footer {
     background-color: hsl(192, 100%, 9%);
-    padding: 16rem 0 10rem 0;
-    margin-top: 3rem;
 }
 
 .logo.small {
@@ -206,6 +178,14 @@ html {
     max-width: 100%;
     height: auto;
     filter: brightness(0) invert(1);
+}
+
+.cta-button .button.large {
+    font-size: 1.1rem;
+    width: 48%;
+    padding: 1.2rem 0;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .footer-content {
@@ -252,7 +232,6 @@ html {
 .footer__second-column, .footer__third-column {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     width: 20%;
 }
 
@@ -265,7 +244,6 @@ html {
     text-decoration: underline;
 }
 .footer__fourth-column {
-    /* border: 1px solid cyan; */
     width: 12%;
 }
 
@@ -302,6 +280,8 @@ html {
 }
 
 @media screen and (max-width: 1180px) {
+    /* HEADER SECTION */
+
     * {
         padding: 0;
         margin: 0;
@@ -346,6 +326,8 @@ html {
         width: 90%;
     }
 
+    /* HERO SECTION */
+
     .hero-content {
         display: block;
     }
@@ -389,10 +371,7 @@ html {
         margin-inline: auto;
     }
 
-    .hero-image img {
-        max-width: 100%;
-        height: auto;
-    }
+    /* FEATURES SECTION */
 
     .features-section {
         padding-top: 5rem;
@@ -438,6 +417,8 @@ html {
         margin-inline: auto;
     }
 
+    /* REGISTER SECTION */
+
     .register-section {
         width: 95%;
         padding: 2rem 0;
@@ -471,6 +452,8 @@ html {
         cursor: pointer;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     }
+
+    /* FOOTER SECTION */
 
     .primary-footer {
         padding: 10rem 0 5rem 0;
@@ -531,6 +514,7 @@ html {
 }
 
 @media screen and (min-width: 480px) and (max-width: 1180px) {
+    /* HEADER SECTION */
 
     .nav-bar.container {
         width: 85%;
@@ -541,6 +525,8 @@ html {
         max-width: 200px;
         padding: 0.5rem 0;
     }
+
+    /* HERO SECTION */
 
     .hero-image {
         margin-inline: auto;
@@ -558,6 +544,8 @@ html {
         max-width: 400px;
     }
 
+    /* FEATURES SECTION */
+
     .features-section {
         margin-bottom: 10rem;
     }
@@ -574,6 +562,8 @@ html {
         text-align: center;
     }
 
+    /* REGISTER SECTION */
+
     .register-section {
         width: 90%;
         max-width: 600px;
@@ -583,6 +573,8 @@ html {
     .register-section__wrapper {
         padding: 3rem 0;
     } 
+
+    /* FOOTER SECTION */
 
     .logo.small {
         width: 83%;
@@ -610,6 +602,8 @@ html {
 }
 @media screen and (min-width: 768px) {
 
+    /* HERO SECTION */
+
     .about-company__content h4 {
         font-size: 2.2rem;
     }
@@ -621,6 +615,8 @@ html {
     .cta-button .button {
         padding: 1rem 0;
     }
+
+    /* FOOTER SECTION */
 
     .logo.small {
         width: 73%;
@@ -646,14 +642,174 @@ html {
 
 }
 
-/* @media screen and (min-width: 1205px) {
-    
-} */
+@media screen and (min-width: 1181px) {
 
-/* @media screen and (min-width: 1350px) {
-    
-} */
+    .nav-bar .button {
+        font-size: 1.1rem;
+        font-weight: 700;
+        width: 15%;
+        padding: 0.7rem;
+    }
 
-/* @media screen and (min-width: 1480px) {
+    .about-company {
+        width: 50%;
+    }
     
-} */
+    .about-company__content {
+        width: 82%;
+    }
+
+    .about-company__content h4 {
+        padding-bottom: 2.5rem;
+    }
+    
+    .about-company__content p {
+        line-height: 1.6;
+    }
+    
+    .hero-image {
+        width: 55%;
+    }
+
+    .cta-button {
+        padding: 3rem 0 2rem 0;
+    }
+    
+    .cta-button .button {
+        padding: 1.3rem 0;
+    }
+    
+    .cta-button .button.small {
+        font-size: 1rem;
+        width: 55%;
+    }
+
+    /* FEATURES SECTION */
+
+    .features-section {
+        padding: 11rem 0;
+    }
+    
+    .features-section__card {
+        width: 90%;
+        padding: 4rem 0;
+    }
+
+    .features-section__about h4 {
+        font-size: 1.8rem;
+    }
+
+    .features-section__about p {
+        font-size: 1rem;
+    }
+
+    /* REGISTER SECTION */
+
+    .register-section {
+        width: 75%;
+        max-width: 700px;
+        padding: 2rem 0;
+        margin-inline: auto;
+        position: relative;
+        bottom: -20rem;
+    }
+
+    .register-section__wrapper {
+        width: 100%;
+        padding: 2rem 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .register-section h4 {
+        font-size: 1.7rem;
+    }
+
+    /* FOOTER SECTION */
+
+    .primary-footer {
+        padding: 16rem 0 10rem 0;
+        margin-top: 3rem;
+    }
+
+    .footer-content {
+        width: 85%;
+    }
+
+    .footer__first-column {
+        width: 100%;
+    }
+
+    .footer__first-column-wrapper {
+        width: 100%;
+    }
+
+    .footer__second-column, .footer__third-column {
+        width: 50%;
+    }
+
+    .footer__fourth-column {
+        width: 32%;
+    }
+
+}
+
+@media screen and (min-width: 1480px) {
+    /* HERO SECTION */
+    .about-company__content h4 {
+        font-size: 3rem;
+    }
+
+    .about-company__content p {
+        font-size: 1.2rem;
+    }
+
+    /* FEATURES SECTION */
+
+    .features-section__about h4 {
+        font-size: 2rem;
+    }
+
+    .features-section__about p {
+        font-size: 1.2rem;
+    }
+
+    /* REGISTER SECTION */
+
+    .register-section {
+        width: 80%;
+        max-width: 950px;
+        padding: 2rem 0;
+    }
+
+    .register-section__wrapper {
+        padding: 3rem 0;
+    }
+
+    .register-section h4 {
+        font-size: 2.2rem;
+    }
+
+    /* FOOTER SECTION */
+
+    .footer-content {
+        width: 78%;
+    }
+
+    .footer__first-column {
+        width: 35%;
+    }
+
+    .footer__first-column-wrapper {
+        width: 95%;
+    }
+
+    .footer__second-column, .footer__third-column {
+        width: 20%;
+    }
+
+    .footer__fourth-column {
+        width: 12%;
+    }
+}
