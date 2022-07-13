@@ -5,4 +5,4 @@ It is a landing page generally about creating a community where the communicatio
 
 Link to the hosted page
 
-https://0laolu.github.io/zuri-responsive-landingPage-task/
+https://0laolu.github.io/responsive-landing-page/
